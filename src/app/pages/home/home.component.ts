@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MensajesService } from '../../services/mensajes.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  loading = false;
+  constructor(private mens: MensajesService) { }
 
   ngOnInit() {
+
+  }
+
+  async mandarMsj(){
+
+    this.loading = true;
+    await this.mens.enviarMensaje('Esto anda bien, 99% hecho').then( ()=>{
+      this.loading = false;
+    });
+    
   }
 
 }

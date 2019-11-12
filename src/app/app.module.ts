@@ -12,6 +12,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { HttpClientModule} from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

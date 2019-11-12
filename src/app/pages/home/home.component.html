@@ -1,1 +1,14 @@
 <app-navbar></app-navbar>
+
+
+
+
+<div class="container-login100-form-btn m-t-17">
+        <button class="login100-form-btn espaciado back-verde" (click)="mandarMsj()" [disabled]="loading">
+                <i [ngClass]="{'fa-forward': !loading, 'fa-refresh fa-spin': loading }"
+                class="fa espaciado verde-oscuro">  </i>
+                <span *ngIf="!loading" class="verde-oscuro">  Enviar mensaje</span>
+                <span *ngIf="loading" class="verde-oscuro">  Enviando...</span>
+           
+        </button>
+</div>
