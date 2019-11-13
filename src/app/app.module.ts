@@ -11,6 +11,8 @@ import { LoginComponent } from './pages/login/login.component';
 
 import { HttpClientModule} from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MensajesPipe } from './pages/mensajes.pipe';
+import { MensajesComponent } from './pages/mensajes/mensajes.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     RegistroComponent,
     HomeComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    MensajesPipe,
+    MensajesComponent
   ],
   imports: [
     BrowserModule,

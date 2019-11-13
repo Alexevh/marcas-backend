@@ -5,11 +5,13 @@ import { HomeComponent } from './pages/home/home.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
+import { MensajesComponent } from './pages/mensajes/mensajes.component';
 
 const routes: Routes = [
   { path: 'home'    , component: HomeComponent, canActivate: [AuthGuard]},
   { path: 'registro', component: RegistroComponent },
   { path: 'login'   , component: LoginComponent },
+  { path: 'mensajes'   , component: MensajesComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: 'login' }
 ];
 

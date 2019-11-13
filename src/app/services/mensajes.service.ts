@@ -26,7 +26,7 @@ export class MensajesService {
 
       this.http.post(`https://onesignal.com/api/v1/notifications`, msj, { headers })
         .subscribe( resp => {
-
+          console.log('me llega de respuesta', resp)
           
           resolve(true);
         });

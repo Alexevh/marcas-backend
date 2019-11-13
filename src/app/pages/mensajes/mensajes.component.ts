@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { MensajesService } from '../../services/mensajes.service';
-import { NgForm } from '@angular/forms';
+import { MensajesService } from 'src/app/services/mensajes.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-mensajes',
+  templateUrl: './mensajes.component.html',
+  styleUrls: ['./mensajes.component.css']
 })
-export class HomeComponent implements OnInit {
+export class MensajesComponent implements OnInit {
 
   loading = false;
   mensaje ='';
@@ -25,5 +24,4 @@ export class HomeComponent implements OnInit {
     });
     
   }
-
 }

@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+
+
+
+<div class="container margen-top-35 FuentePrincipal">
+        <p class="FuentePrincipal"> Ingrese el mensaje para enviar a los dispositivos conectados, el maximo es 160 caracteres</p>
+
+                <div class="form-group">
+                <textarea [(ngModel)]="mensaje" class="form-control FuentePrincipal" id="exampleFormControlTextarea1" rows="3" maxlength="160"></textarea>
+                        <button class="login100-form-btn espaciado back-verde" (click)="mandarMsj()" [disabled]="loading">
+                                        <i [ngClass]="{'fa-forward': !loading, 'fa-refresh fa-spin': loading }"
+                                        class="fa espaciado verde-oscuro">  </i>
+                                        <span *ngIf="!loading" class="verde-oscuro FuentePrincipal">  Enviar mensaje</span>
+                                        <span *ngIf="loading" class="verde-oscuro FuentePrincipal">  Enviando...</span>         
+                                </button>
+                </div>
+
+      
+</div>

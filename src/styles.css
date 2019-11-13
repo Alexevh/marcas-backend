@@ -11,3 +11,19 @@
 
     background-color: #bae2d2 !important;
 }
+
+.margen-top-35{
+ margin-top: 35px;
+}
+
+@font-face {
+    font-family: 'Principal'; /*a name to be used later*/
+    src: url('./assets/fuentes/M15/beleren-bold_P1.01.ttf') format('truetype'); /*URL to font*/
+}
+
+/* Como estamos usando JQueryMobolie y Bootstrap tenemos que fijar a fuego las fuentes
+personalizadas o las sobreescribe*/
+.FuentePrincipal {
+    font-family: 'Principal';
+    
+}
